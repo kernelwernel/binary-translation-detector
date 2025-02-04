@@ -12,3 +12,4 @@ For now, the program can detect 3 brands:
  - Apple Rosetta
  - Microsoft x86-to-ARM (also known as Microsoft XTA)
  - Microsoft Prism
+ - PowerVM Lx86

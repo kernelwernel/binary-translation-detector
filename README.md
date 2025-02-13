@@ -8,7 +8,7 @@ This is mainly meant as just a fun and experimental program that I've developed 
 
 
 # Which binary translators can it detect?
-For now, the program can detect 3 brands:
+For now, the program can detect 4 brands:
  - Apple Rosetta
  - Microsoft x86-to-ARM (also known as Microsoft XTA)
  - Microsoft Prism

@@ -91,6 +91,24 @@ bool detect_apple_rosetta() {
     return (strcmp(manufacturer, "VirtualApple") == 0);
 }
 
+bool detect_powervm_lx86() {
+    char manufacturer[13];
+    manufacturer[12] = '\0';
+
+    u32 cpu_info[4] = {0};
+    
+#if (WINDOWS)
+    __cpuid((int32_t*)cpu_info, CPU_MANUFACTURER);
+#elif (LINUX || APPLE)
+    __cpuid_count(CPU_MANUFACTURER, 0, cpu_info[0], cpu_info[1], cpu_info[2], cpu_info[3]);
+#endif
+
+    *((u32*)manufacturer) = cpu_info[1];
+    *((u32*)(manufacturer + 4)) = cpu_info[3];
+    *((u32*)(manufacturer + 8)) = cpu_info[2];
+
+    return (strcmp(manufacturer, "PowerVM Lx86") == 0);
+}
 
 
 bool detect_microsoft_prism() {
@@ -121,7 +139,9 @@ bool detect_microsoft_x86_to_arm() {
 
 
 int main() {
-    if (detect_apple_rosetta()) {
+    if (detect_powervm_lx86()) {
+        printf("Apple Rosetta translator detected\n");
+    } else if (detect_apple_rosetta()) {
         printf("Apple Rosetta translator detected\n");
     } else if (detect_microsoft_prism()) {
         printf("Microsoft Prism translator detected\n");

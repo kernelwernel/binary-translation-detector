@@ -11,7 +11,8 @@ Does this have any practical implications? Absolutely fucking not. But hey, what
 
 
 # Which binary translators can it detect?
-For now, the program can detect 3 brands:
+For now, the program can detect 4 brands:
  - Apple Rosetta
  - Microsoft x86-to-ARM (also known as Microsoft XTA)
  - Microsoft Prism
+ - PowerVM Lx86

@@ -3,8 +3,11 @@ This is a simple C program that will determine whether your environment is runni
 
 
 # Why?
-This is mainly meant as just a fun and experimental program that I've developed while working on VMAware, a VM detection library. VMAware originally added binary translators as a detectable VM brand, but I ditched that idea as it was out of the scope of the project. So instead of just removing them, I'm adding them in this separate repository as I figured it was interesting enough to have it published as a gimmicky and stupidly simple C side project. Does this have any practical implications? Absolutely fucking not. But hey, what's stopping people from making stuff out of pure curiosity right?
+This is mainly meant as just a fun and experimental program that I've developed while working on VMAware, a VM detection library. VMAware originally added binary translators as a detectable VM brand, but I ditched that idea as it was out of the scope of the project. 
 
+So instead of just removing them, I'm adding them in this separate repository as I figured it was interesting enough to have it published as a gimmicky and stupidly simple C side project. 
+
+Does this have any practical implications? Absolutely fucking not. But hey, what's stopping people from making stuff out of pure curiosity, right?
 
 
 # Which binary translators can it detect?

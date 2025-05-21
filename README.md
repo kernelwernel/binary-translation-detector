@@ -7,7 +7,7 @@ This is mainly meant as just a fun and experimental program that I've developed 
 
 So instead of just removing them, I'm adding them in this separate repository as I figured it was interesting enough to have it published as a gimmicky and stupidly simple C side project for the sake of demonstrating that this is possible.
 
-Does this have any practical implications? Absolutely fucking not. But hey, what's stopping people from making stuff out of pure curiosity, right?
+Does this have any practical implications? Absolutely fucking not.
 
 
 # Which binary translators can it detect?

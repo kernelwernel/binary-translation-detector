@@ -3,7 +3,6 @@
 #include <stdbool.h>
 #include <string.h>
 
-
 #if defined(_WIN32) || defined(_WIN64)
 #define WINDOWS 1
 #define LINUX 0
@@ -33,7 +32,6 @@
 #include <intrin.h>
 #endif
 
-
 u8 get_windows_version() {
 #if (WINDOWS)
     OSVERSIONINFOEX osvi;
@@ -47,7 +45,6 @@ u8 get_windows_version() {
 
     return 0;
 }
-
 
 bool get_emulation_status_microsoft() {
 #if (WINDOWS)
@@ -69,8 +66,6 @@ bool get_emulation_status_microsoft() {
 
     return false;
 }
-
-
 
 bool detect_apple_rosetta() {
     char manufacturer[13];
@@ -110,7 +105,6 @@ bool detect_powervm_lx86() {
     return (strcmp(manufacturer, "PowerVM Lx86") == 0);
 }
 
-
 bool detect_microsoft_prism() {
 #if (!WINDOWS)
     return false;
@@ -123,7 +117,6 @@ bool detect_microsoft_prism() {
 #endif
 }
 
-
 bool detect_microsoft_x86_to_arm() {
 #if (!WINDOWS)
     return false;
@@ -135,8 +128,6 @@ bool detect_microsoft_x86_to_arm() {
     return false;
 #endif
 }
-
-
 
 int main() {
     if (detect_powervm_lx86()) {

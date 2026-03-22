@@ -131,7 +131,7 @@ bool detect_microsoft_x86_to_arm() {
 
 int main() {
     if (detect_powervm_lx86()) {
-        printf("Apple Rosetta translator detected\n");
+        printf("PowerVM Lx86 detected\n");
     } else if (detect_apple_rosetta()) {
         printf("Apple Rosetta translator detected\n");
     } else if (detect_microsoft_prism()) {
